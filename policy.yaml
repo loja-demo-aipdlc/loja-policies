@@ -1,0 +1,10 @@
+# Política do produto loja (nível P).
+level: product
+name: loja-policies
+product: loja
+productRepository: loja-product
+productLeadership: [github:gabrielmissio]
+businessPaths:
+  checkout-api: ["src/checkout/pricing/**"]
+riskMap:
+  - { path: "**/pricing/**", class: R2 }

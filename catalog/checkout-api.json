@@ -1,0 +1,17 @@
+{
+  "componentId": "checkout-api",
+  "name": "API de carrinho, preço e pedido",
+  "kind": "service",
+  "product": "loja",
+  "squad": "checkout",
+  "serviceOwner": "github:missiodev",
+  "codeOwners": ["github:missiodev", "github:PedroLeale"],
+  "repository": "loja-checkout-api",
+  "paths": ["src/", "tests/", "acceptance/", "docs/"],
+  "nonRuntimePaths": ["tests/", "acceptance/", "docs/"],
+  "verificationPaths": ["acceptance/**"],
+  "deployers": ["checkout"],
+  "criticalJourneys": ["checkout"],
+  "riskMap": [{ "path": "src/checkout/pricing/", "class": "R2" }],
+  "autonomy": { "R1": "draft-pr", "R2": "plan", "R3": "plan" }
+}
